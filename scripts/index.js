@@ -13,3 +13,25 @@ const colorCycle = () => {
 	return false;
 };
 cycleButton.addEventListener("click", colorCycle);
+
+let storedColor;
+const box = document.querySelectorAll(".box");
+const colorBox = document.querySelectorAll(".color-box");
+
+const takeColor = (element) => {
+	const color = element.target.style.backgroundColor;
+	storedColor = color;
+};
+const applyColor = (element) => {
+	element.target.style.backgroundColor = storedColor;
+};
+colorBox.forEach((element) => {
+	element.addEventListener("click", function (e) {
+		takeColor(e);
+	});
+});
+box.forEach((element) => {
+	element.addEventListener("click", function (e) {
+		applyColor(e);
+	});
+});
