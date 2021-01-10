@@ -19,7 +19,9 @@ const box = document.querySelectorAll(".box");
 const colorBox = document.querySelectorAll(".color-box");
 
 const takeColor = (element) => {
-	const color = element.target.style.backgroundColor;
+	const color = window
+		.getComputedStyle(element.target)
+		.getPropertyValue("background-color");
 	storedColor = color;
 };
 const applyColor = (element) => {
