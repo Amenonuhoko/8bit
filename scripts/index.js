@@ -1,6 +1,15 @@
-const takeColor = (element) => {
-	const x = element.style.backgroundColor;
-	return x;
+const cycleButton = document.querySelector(".change-color");
+
+const colorCycle = () => {
+	const boxOne = document.querySelector(".color-boxes-1");
+	const boxTwo = document.querySelector(".color-boxes-2");
+	if (boxOne.style.display === "flex") {
+		boxOne.style.display = "none";
+		boxTwo.style.display = "flex";
+	} else {
+		boxOne.style.display = "flex";
+		boxTwo.style.display = "none";
+	}
+	return false;
 };
-const applyColor = (color) => {};
-EventTarget.addEventListener("click", applyColor);
+cycleButton.addEventListener("click", colorCycle);

@@ -1,18 +1,20 @@
 .color-container {
 	display: flex;
-	flex-direction: column;
-	background-color: green;
+	flex-direction: row;
 	height: 400px;
+}
+.change-color {
+	border: 2px solid;
+	height: 50px;
+	width: 50px;
 }
 .color-boxes-1 {
 	display: flex;
 	flex-direction: column;
 }
 .color-boxes-2 {
-	display: hide;
-}
-.color-boxes-3 {
-	display: hide;
+	display: none;
+	flex-direction: column;
 }
 .color-box-1 {
 	background-color: blue;
@@ -24,5 +26,41 @@
 	background-color: yellow;
 }
 .color-box-4 {
+	background-color: green;
+}
+.color-box-5 {
+	background-color: orange;
+}
+.color-box-6 {
+	background-color: purple;
+}
+.color-box-7 {
+	background-color: black;
+}
+.color-box-8 {
+	background-color: white;
+}
+.color-box-9 {
+	background-color: teal;
+}
+.color-box-10 {
+	background-color: pink;
+}
+.color-box-11 {
+	background-color: turquoise;
+}
+.color-box-12 {
+	background-color: green;
+}
+.color-box-13 {
+	background-color: green;
+}
+.color-box-14 {
+	background-color: green;
+}
+.color-box-15 {
+	background-color: green;
+}
+.color-box-16 {
 	background-color: green;
 }
