@@ -1,0 +1,28 @@
+.color-container {
+	display: flex;
+	flex-direction: column;
+	background-color: green;
+	height: 400px;
+}
+.color-boxes-1 {
+	display: flex;
+	flex-direction: column;
+}
+.color-boxes-2 {
+	display: hide;
+}
+.color-boxes-3 {
+	display: hide;
+}
+.color-box-1 {
+	background-color: blue;
+}
+.color-box-2 {
+	background-color: red;
+}
+.color-box-3 {
+	background-color: yellow;
+}
+.color-box-4 {
+	background-color: green;
+}
