@@ -29,3 +29,6 @@ footer {
 	border: 1px solid;
 	flex-grow: 1;
 }
+.selected {
+	border: 8px solid;
+}
